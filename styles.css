@@ -10,7 +10,7 @@ body{
  display: grid;
  border: 2px solid red;
  grid-template-columns: 5% 95%x;
- grid-template-rows: 100px 670px 130px;
+ grid-template-rows: 150px 700px 200px;
  grid-template-areas:
  "hd hd hd hd hd hd hd hd"
  "sd main main main main main main main"
@@ -57,13 +57,19 @@ body{
     grid-area: ft;
     border: 3px solid red;
     background-color: #ccc;
-}
-.footer-content{
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid white;
 }
+
+
+.field{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   padding: 3px 0;
+}
+
 .menu{
     list-style:none;
     font-size: 20px;
@@ -82,4 +88,15 @@ body{
     cursor: pointer;
     border-radius: 8px;
   }
- 
+ label{
+     justify-self: end;
+     padding-right: 10px;
+ }
+
+.form-footer{
+    margin: 15px;
+}
+.actions{
+    padding: 3px 0;
+    text-align: right;
+}
