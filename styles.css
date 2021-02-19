@@ -20,16 +20,34 @@ body{
 
 .header{
     grid-area: hd;
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
+    /*background-color: rgb(182, 168, 181);*/
+    background: -webkit-linear-gradient(70deg,#c5b4c4  40%, #df9bda 40%);
+  background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
+  background: -moz-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
+  background: linear-gradient(70deg, #c5b4c4  35%, #df9bda 37%);
     
+}
+.site-name{
+    text-align: center;
+    margin: 50px;
+   
+
+
 }
 .sidebar{
     grid-area: sd;
-    border: 3px solid black;
+    /*border: 3px solid purple;*/
+    background-color: #c5b4c4 ;
 }
 .content{
     grid-area: main;
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
+    /*background-color: rgb(182, 168, 179);*/
+    background: -webkit-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
+  background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
+  background: -moz-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
+  background: linear-gradient(70deg, #c5b4c4  38%, #df9bda  40%);
        
 }
 
@@ -43,24 +61,35 @@ body{
     justify-content: space-around;
    /*border: 6px solid purple;*/
    flex-grow: 1;
-   /*height: 100%;*/
-   margin: 25px;
+   height: 100%;
+  /* margin: 25px 25px 0 0;*/
 }
 
 .box{
-    width: 250px;
-    /*height: 90%;*/
-    border: 3px solid red;
+    width: 400px;
+    height: 90%;
+    /*border: 3px solid red;*/
 }
-  
+.cell{
+    padding: 30px;
+
+}
+  .image{
+      width: auto;
+      max-width: 100%;
+  }
 .footer{
     grid-area: ft;
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     background-color: #ccc;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: -webkit-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
+  background: -o-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
+  background: -moz-linear-gradient(70deg,#c5b4c4 50%, #df9bda 50%);
+  background: linear-gradient(70deg, #c5b4c4 51%, #df9bda 52%);
 }
 
 
@@ -73,6 +102,7 @@ body{
 .menu{
     list-style:none;
     font-size: 20px;
+   
 
 }
 .button {
