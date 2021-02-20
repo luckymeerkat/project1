@@ -1,20 +1,24 @@
-html,
 body{
-
+  
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+
 .container{
  display: grid;
- border: 2px solid red;
+ /*border: 2px solid red;*/
  grid-template-columns: 5% 95%x;
  grid-template-rows: 150px 700px 200px;
  grid-template-areas:
  "hd hd hd hd hd hd hd hd"
  "sd main main main main main main main"
  "ft ft ft ft ft ft ft ft";
+ font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  
+  
 }
 
 
@@ -25,12 +29,15 @@ body{
     background: -webkit-linear-gradient(70deg,#c5b4c4  40%, #df9bda 40%);
   background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
   background: -moz-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
-  background: linear-gradient(70deg, #c5b4c4  35%, #df9bda 37%);
+  background: linear-gradient(70deg, #c5b4c4  30%, #df9bda 37%);
     
 }
 .site-name{
     text-align: center;
     margin: 50px;
+    font-family: Merriweather, serif;
+  font-size: 46px;
+    
    
 
 
@@ -47,7 +54,7 @@ body{
     background: -webkit-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
   background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
   background: -moz-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
-  background: linear-gradient(70deg, #c5b4c4  38%, #df9bda  40%);
+  background: linear-gradient(70deg, #c5b4c4  35%, #df9bda  37%);
        
 }
 
@@ -89,7 +96,7 @@ body{
     background: -webkit-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
   background: -o-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
   background: -moz-linear-gradient(70deg,#c5b4c4 50%, #df9bda 50%);
-  background: linear-gradient(70deg, #c5b4c4 51%, #df9bda 52%);
+  background: linear-gradient(70deg, #c5b4c4 49%, #df9bda 52%);
 }
 
 
@@ -104,6 +111,13 @@ body{
     font-size: 20px;
    
 
+}
+
+  a:focus, a:hover, a:active, a {
+    color: black;
+    text-decoration: none;
+    }
+    
 }
 .button {
     background-color: blue;
