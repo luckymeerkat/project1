@@ -1,4 +1,5 @@
-body{
+html,
+  body{
   
     margin: 0;
     padding: 0;
@@ -22,8 +23,6 @@ body{
   background: -moz-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
   background: linear-gradient(70deg, #c5b4c4  35%, #df9bda 37%);
     
-  
-  
 }
 
 
@@ -31,11 +30,7 @@ body{
     grid-area: hd;
     /*border: 3px solid yellow;*/
     /*background-color: rgb(182, 168, 181);*/
-    /*background: -webkit-linear-gradient(70deg,#c5b4c4  40%, #df9bda 40%);
-  background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
-  background: -moz-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
-  background: linear-gradient(70deg, #c5b4c4  30%, #df9bda 37%);*/
-    
+       
 }
 .site-name{
     text-align: center;
@@ -43,9 +38,6 @@ body{
     font-family: Merriweather, serif;
   font-size: 46px;
     
-   
-
-
 }
 .sidebar{
     grid-area: sd;
@@ -56,11 +48,7 @@ body{
     grid-area: main;
     /*border: 3px solid blue;*/
     /*background-color: rgb(182, 168, 179);*/
-   /* background: -webkit-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
-  background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
-  background: -moz-linear-gradient(70deg, #c5b4c4 40%, #df9bda 40%);
-  background: linear-gradient(70deg, #c5b4c4  35%, #df9bda  37%);*/
-       
+  
 }
 
 .content-header{
@@ -96,6 +84,11 @@ body{
   .card-text{
     text-align: justify;
   }
+  figcaption{
+    font-style: italic;
+  padding: 2px;
+  text-align: center;
+  }
 .footer{
     grid-area: ft;
     /*border: 3px solid red;*/
@@ -104,12 +97,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background: -webkit-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
-  background: -o-linear-gradient(70deg, #c5b4c4  50%, #df9bda 50%);
-  background: -moz-linear-gradient(70deg,#c5b4c4 50%, #df9bda 50%);
-  background: linear-gradient(70deg, #c5b4c4 49%, #df9bda 52%);*/
+   
 }
-
 
 .field{
    display: grid;
@@ -121,7 +110,6 @@ body{
     list-style:none;
     font-size: 20px;
    
-
 }
 
   a:focus, a:hover, a:active, a {
@@ -130,6 +118,7 @@ body{
     }
     
 }
+
 .button {
     background-color: blue;
     border: none;
@@ -154,4 +143,22 @@ body{
 .actions{
     padding: 3px 0;
     text-align: right;
+}
+
+@media (max-width: 600px){
+  .container{
+    background: lightblue;
+}
+
+.sidebar{
+  
+  background: lightblue;
+}
+.content-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ /*border: 6px solid purple;*/
+ flex-grow: 1;
+ height: 100%;
 }

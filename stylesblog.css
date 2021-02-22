@@ -5,13 +5,11 @@ body{
     height: 100%;
 }
  
- 
-
 .container{
     display: grid;
     /*border: 2px solid red;*/
     /*grid-template-columns: 5% 95%x;*/
-    grid-template-rows: 80px 100px 900px;
+    grid-template-rows: 1fr 2fr 10fr;
     grid-template-areas:
     "sd sd sd sd sd sd sd sd"
     "hd hd hd hd hd hd hd hd"
@@ -29,6 +27,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     border-top-style: none;
     border-right-style: none;
     border-bottom-style:solid;
@@ -53,9 +52,10 @@ a:focus, a:hover, a:active, a {
 }
 .site-name{
     text-align: center;
-    margin: 10px;
+    /*margin: 5px;*/
     font-family: Merriweather, serif;
     font-size: 46px;
+    align-items: center;
 }
 
 .content{
@@ -78,6 +78,14 @@ a:focus, a:hover, a:active, a {
 }
 .article{
     margin: 10px;
+    text-align: justify;
+    padding: 20px;
+}
+.social-buttons{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
 }
 
 .fa {
@@ -87,7 +95,9 @@ a:focus, a:hover, a:active, a {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius:50%
+    border-radius:50%;
+    border: 1px solid gray;
+    
 }
 .fa:hover {
     opacity: 0.7;
@@ -95,20 +105,27 @@ a:focus, a:hover, a:active, a {
 
 .fa-facebook {
   background: #df9bda;
-  color: white;
+  color: black;
+  
 }
 .fa-linkedin {
     background: #df9bda;
-    color: white;
+    color: black;
   }
   
   .fa-youtube {
     background: #df9bda;
-    color: white;
+    color: black;
   }
   
   .fa-instagram {
     background: #df9bda;
-    color: white;
+    color: black;
   }
-  
+  @media (max-width: 600px){
+    .container{
+        background-color: lightblue;
+
+    }
+    
+  }
