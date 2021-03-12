@@ -31,7 +31,7 @@ body {
 }
 
 .sd-box {
-  width: 70px;
+  /*width: 70px;*/
   margin: 10px;
   text-align: center;
   font-size: 20px;
@@ -115,10 +115,65 @@ a:focus, a:hover, a:active, a {
   color: black;
 }
 
-@media (max-width: 600px){
-  .container{
-    background-color: lightblue;
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+
+  .container {
+    grid-template-rows: auto;
+    background-color: #a0999f;
+  }
+  .header {
+    margin: 10px;
+  }
+
+  .site-name {
+    font-size: 28px;
+  }
+
+  .sidebar-flex {
+    flex-direction: column;
+  }
+
+  .content-grid { 
+    grid-template-columns: 100%;
+  }
+
+  .social-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .image {
+   margin: 20px 0 0 0;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .container {
+    grid-template-rows: auto;
+    background-color: #a0999f;
+  }
+
+  .header {
+    margin: 10px;
+  }
+
+  .site-name {
+    font-size: 28px;
+  }
+
+  .content-grid { 
+    grid-template-columns: 100%;
+  }
   
+  .social-buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 
 }
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (max-width: 1199) { ... }*/
