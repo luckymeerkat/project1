@@ -1,0 +1,44 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      background:#df9bda;    
+      grid-template-areas:
+        "hd"
+        "sd"
+        "main"
+        "ft";
+    }
+  
+    .site-name {
+      font-size: 28px;  
+    }
+  
+    .content-flex {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: auto;
+    }  
+  }
+  
+  /* Medium devices (desktops, 992px and up) */
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      grid-template-rows: auto;
+      background:#e78be0;    
+    }
+  
+    .site-name {
+      font-size: 28px;  
+    }
+  
+    .content-flex {
+      flex-direction: column;
+    }
+  }
+  
