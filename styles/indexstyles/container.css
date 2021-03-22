@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 5% 95%x;
+    grid-template-rows: 3fr 14fr 4fr;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    background: -webkit-linear-gradient(70deg,#c5b4c4  40%, #df9bda 40%);
+    background: -o-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
+    background: -moz-linear-gradient(70deg, #c5b4c4  40%, #df9bda 40%);
+    background: linear-gradient(70deg, #c5b4c4  35%, #df9bda 37%);    
+  }

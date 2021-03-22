@@ -1,0 +1,16 @@
+.header {
+    grid-area: hd;
+  }
+  
+  .site-name {
+    text-align: center;
+    margin: 50px;
+    font-family: Merriweather, serif;
+    font-size: 46px;  
+  }
+  
+  .qoutes-header {
+    text-align: center;
+    font-size: 23px;  
+    font-family: Merriweather, serif;
+  }

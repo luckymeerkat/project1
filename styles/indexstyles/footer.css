@@ -1,0 +1,36 @@
+.footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .field {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3px 0;
+  }
+  
+  .menu {
+    list-style:none;
+    font-size: 20px;
+  }
+  
+  a:focus, a:hover, a:active, a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  label {
+    justify-self: end;
+    padding-right: 10px;
+  }
+  
+  .form-footer {
+    margin: 15px;
+  }
+  
+  .actions {
+    padding: 3px 0;
+    text-align: right;
+  }
